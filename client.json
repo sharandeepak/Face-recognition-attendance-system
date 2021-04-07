@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "copper-actor-286817",
+  "private_key_id": "28e631a60b23cb6a7dd27e37f8ff563d56885c18",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDCHmIrMONErFrz\nzeNcukg2NeoOj2Ztqk31mslp2QjJLwmJbHizYzF2BkNiCxEodGQatEAPTNcnN7Rz\nNLaD6iTuxiE4tbTQgyCa6v+0zG4dsxL23lvvUKyEzCrb8DeapTxXmjUvryZD3KBQ\ng49rUy1i3MjLy+JUK2nh8nMDWVzFgCgB947LXiYvYLAOKAWda6uT5LutuJasjZEt\n31B9ITZUxMQW9T93xM8GNzYGAfX6DbdW/Cm9GXVXIuvr5R6quPaDm0KeQ7L3a1j9\nBfUHqh2bA1zC69SD3aMMUSCmWD4x4QOPhNIA2UGCAK8ydFLgt5+bKcOdojyl85FZ\njlucrgz/AgMBAAECggEAPWzj34ruv5JSjYd/BJ6lrxHMaKMT5GvZk3hRd78HurG5\nsNS0NP+UbSZ6OBIMceKysoiLJMxJ4M0Nus7ZWlDDMxNa+9jzyG9V5++ozotJ5Pf/\nbkLakJXUoYkBnusajULwH0BayCYCU8MCr7eRsIJ3gCshFuwDSGMcdDUGE+85Hf1r\nUQvloGU5SHpZhtb9StN6w29qOxB75cMZ2akx/zcdd39isLcn44APu4Y0jeGn7VjH\nSBpX2OFtudVMqhV2OLmesc2b1vg/Dk1ML4sY3jKCmyqjFrwTAzXy/xdNum4rBXsW\nUoS14EbzJTzUo+MwUVd9G+L4lDTI4IjvEqyDVup2gQKBgQD+7knuuyhXVIBUJi9V\n//5d7XwRXe5ngtUZXUNkN5FrnehaFQ8GgYW+iMKxx8RRk8nvsmg7jifty5HLuzLQ\nUEO+Hecfzi6Sp84IikpOZqvFwMr7+qLSQoeeNpbi60uz2pAW7uuwfOMZ3n5JUEaw\nkitSVzq9l1efWB+cVnV6lPw0YQKBgQDC7s13OWGC8KgXv/gK3iCTNlfn1KgzSHIu\n7HIBWd3y4C4IlV5TsSR73hasPPqjf4/wBe5d4slzp6zLwvPTq+il/69gG8DQI51I\nljH65qxqTJBww44kHNV1+LuWwyxFwmphjyeuIbbCu4gzjvqAJ8nrgTXy/+FTyeR0\nQ5CxyEu9XwKBgErGbEso/Hk5IPcNyD6qetrkKMsTSTV1a7on3/eKUQ5G3/tkR+b5\noNg1Vx48YTooZkf3hZlKZi3a0yX1/76YfHZMYRm0KXb833Mj1Q3QEbxMg32Lk6ym\ntQ7UJkfjCm5zwmXnqJw41Ygl+dbZRBLQnQJm8aTgumPTvlnmBklxX9ShAoGAZCpp\nkfX+UVZwSaPvRUZW3s5x5UK1G4UCh3IgMumGzyK7BNYcHk1MPgolBGRhNlp6EBA8\nKCo88h0bAakvuXkAlywHZg9cyJdEXuQu0opt1kF5hzg1dgEK/w/M9O9ddIsuNutk\nrGnOi8npdvTla60GaOmAW1l446E+ry94zqHpqWkCgYEAxaglx2kNPq9U0mpkF29N\nxHLAXzNCLrtiitBzXPP4s6sx7VMSNzNMuzKWxH3JGJY5iUwsYdhQPzFUev3+Gv42\nl7Kg9WhC+ltFv2csZOI4+I8ArxFeZKjnhtimc6dp3NauL7Jb4kBtyqz2n/u/1PAo\nG37V/Ew9H8Z1TFHSiO2Y5CA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "facerecognition@copper-actor-286817.iam.gserviceaccount.com",
+  "client_id": "117351327634858433369",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/facerecognition%40copper-actor-286817.iam.gserviceaccount.com"
+}

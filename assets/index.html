@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+            /* height: 200px; */
+            /* background-color: red; For browsers that do not support gradients */
+            background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+
+
+            }
+           
+            .container {
+              position: relative;
+            }
+            
+            .topleft {
+              position: absolute;
+              top: 70px;
+              left: 40px;
+              font-size: 18px;
+              padding-top: 10%;
+            }
+            
+            img { 
+              height: auto;
+              
+            }
+            
+p {
+  font-family: poppins;
+  font-size: larger;
+  color: #ffffff;
+}.container {
+    width: 400px;
+    height: 400px;
+    margin: 2em auto;
+    overflow: hidden;
+    background: #096ef3;
+    position: relative;
+}
+
+.slider {
+    top: 1em;
+    position: relative;
+    box-sizing: border-box;
+    animation: slider 15s linear infinite;
+    list-style-type: none;
+    text-align: center;
+}
+
+.slider:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slider {
+    0%   { top:   10em }
+    100% { top: -16em }
+}
+
+.blur .slider {
+  	margin: 0;
+    padding: 0 1em;
+    line-height: 1.5em;
+}
+
+.blur:before, .blur::before,
+.blur:after,  .blur::after {
+    left: 0;
+    z-index: 1;
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height: 2em;
+    background-image: linear-gradient(180deg, #FFF, rgba(255,255,255,0));
+}
+
+.blur:after, .blur::after {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.blur:before, .blur::before {
+    top: 0;
+}
+
+p {
+  font-family: helvetica, arial, sans serif;
+}
+            </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="css/styles.css">
+
+        
+
+
+        <title>Smart Attendance</title>
+    </head>
+    <body>
+        <div class="topleft">
+            <img src="img/logo.jpg" alt="Logo of RPF" width="200" height="200" style="border-radius: 25px;">
+            
+          </div>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
+
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="btn-grad"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="btn-grad" onclick="take_attendance()"><a href="#home" class="nav__link">Mark Attendance</a></li>
+                        <li class="btn-grad" onclick="togglePopup()"><a href="#home" class="nav__link">Add Employee</a></li>
+                        <li class="btn-grad" onclick="SaveAttendance()"><a href="#home" class="nav__link">Save Attendance</a></li>
+                        <li class="btn-grad" onclick="togglePopup5 ()"><a href="#home" class="nav__link">Admin Access</a></li>           
+                    </ul>
+                </div>
+                
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__data">
+                        <h1 class="home__title">Smart Attendance</h1>
+                        <h2 class="home__subtitle">Mark your Attendance <br> On the Go.</h2>
+                        
+                    </div>
+    
+                    <!-- <img src="img/atte.svg" alt="" class="home__img"> -->
+                    <div class="container blur">
+                      <ul class="slider">
+                        <li><p style="color:rgb(255, 209, 2);font-size: 30px;"><u>Notification</u></p></li><br>
+                        <li><p style="color:rgb(23, 255, 2);font-size: 30px;">Srly commissions solar plant, other green projects</p></li>
+                        <br>
+                        <!-- <li><p>HAPPY REPUBLIC DAY </p></li>
+                        <li><p>HAPPY REPUBLIC DAY </p></li>
+                        <li><p>HAPPY REPUBLIC DAY </p></li>
+                        <li><p>HAPPY REPUBLIC DAY </p></li>
+                        <li><p>HAPPY REPUBLIC DAY </p></li> -->
+                      </ul>
+                  </div>
+                </div>
+            </section>
+            
+                
+                
+            
+
+             <!--========== ADD EMPLOYEE POPUP ==========-->    
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup()">&times;</div>
+                  <h2 class="section-title">Add Employee</h2>
+    
+                <div class="add-employee-area">
+                    <form class="form-inline">
+                    <input type="text" id="uid" class="form-control email" placeholder="UID">
+                </form>
+                <br>
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="text" id="full_name" class="form-control email"placeholder="Full Name">
+                    
+                </form>
+                <br>
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="button" class="submit" value="Submit" onclick="create_dataset()">
+                </form>
+                    
+                </div>
+                </div>
+              </div>
+              </div>
+              </div>
+
+            <!--========== Menu 3 ==========-->    
+            <div class="popup" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup2()">&times;</div>
+                  <h3 class="section-title">This may take some time <br> want to proceed?</h3>
+
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="button" class="submit" value="Submit" onclick="train_dataset();togglePopup2();">
+                </form>
+                    
+                </div>
+                </div>
+              </div>
+            <!--========== loading pop ==========-->  
+            <div class="popup" id="loadingg">
+                <div class="overlay"></div> 
+                <div class="content">
+                  <h3 class="section-title">Loading...</h3>
+                  <div class="loading-screen">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+            </div>
+            <!--========== Admin Access Popup ==========-->  
+            <div class="popup" id="popup-3">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup3()">&times;</div>
+                  <h3 class="section-title">Admin Access</h3>
+
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="button" class="submit" value="Prepare Dataset" onclick="togglePopup3();train_dataset();">
+                </form>       
+                </div>
+                <br>
+                <br>
+
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="button" class="submit" value="Manual Entry" onclick="togglePopup3();togglePopup4();">
+                </form>       
+                </div>
+                </div>
+              </div>            
+              <div class="popup" id="popup-4">
+                <div class="overlay"></div>
+                <div class="content">
+                  <div class="close-btn" onclick="togglePopup4()">&times;</div>
+                  <h3 class="section-title">Enter UIN</h3>
+                  <div class="add-employee-area">
+                    <form class="form-inline">
+                    <input type="text" id="uid2" class="form-control email" placeholder="UID">
+                    </form>
+                    <br>
+
+                <div class="add-employee-area">
+                    <form class="form-inline">  
+                    <input type="button" class="submit" value="Mark Attendance" onclick="manual_entry();togglePopup4();">
+                </form>       
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+        <!--========== Password POPUP ==========-->      
+        <div class="popup" id="popup-5">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="close-btn" onclick="togglePopup5()">&times;</div>
+            <h3 class="section-title">Enter Password</h3>
+            <div class="add-employee-area">
+              <form class="form-inline">
+              <input type="password" id="passkey" class="form-control email" placeholder="Password">
+              </form>
+              <br>
+
+          <div class="add-employee-area">
+              <form class="form-inline">  
+              <input type="button" class="submit" value="Submitt" onclick="togglePopup5();checkPassword();">
+          </form>       
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup-6">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup6()">&times;</div>
+          <h3 class="section-title">Invalid Password</h3>
+          
+        </div>
+      </div>
+    </div>
+        
+              
+    
+            
+           
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="js/main.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="js/webpy.js"></script>
+    </body>
+</html>
